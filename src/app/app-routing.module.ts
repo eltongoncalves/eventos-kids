@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'cadastro-crianca',
+    loadChildren: () => import('./cadastro-crianca/cadastro-crianca.module').then( m => m.CadastroCriancaPageModule)
+  },
+  {
+    path: 'listar-criancas',
+    loadChildren: () => import('./listar-criancas/listar-criancas.module').then( m => m.ListarCriancasPageModule)
   }
 ];
 
