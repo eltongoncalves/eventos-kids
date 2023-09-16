@@ -13,18 +13,18 @@
 
 
   <ion-item>
-    <ion-input label="Nome" placeholder="Informe nome"></ion-input>
+    <ion-input label="Nome" [(ngModel)]="crianca.nome" placeholder="Informe nome"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input label="Idade" placeholder="Informe idade"></ion-input>
+    <ion-input label="Idade" [(ngModel)]="crianca.idade" placeholder="Informe idade"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input label="Responsavel" placeholder="Informe Nome responsavel"></ion-input>
+    <ion-input label="Responsavel"  [(ngModel)]="crianca.responsavel" placeholder="Informe Nome responsavel"></ion-input>
   </ion-item>
 
-  <ion-button expand="block" color="success" >Salvar dados</ion-button> 
+  <ion-button expand="block" color="success"  (click)="salvar()" >Salvar dados</ion-button> 
  
 
 </ion-content>
